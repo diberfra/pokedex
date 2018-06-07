@@ -1,41 +1,46 @@
-function pokedex(){
+function pokemon(){
   
-  var id = "";
-  var name = "";
-  var photo = "";
-  var type = "";
-
-  var contentPhoto = "";
-  var contentInfo = "";
-  var infoName = "";
-  var infoType = "";
-  var infoId = "";
-  var auxDiv = "";
   var content = "";
-
-  for(var i=0; i < pokemones.length; i++){
-    id = pokemones[i].id;
-    name = pokemones[i].name;
-    photo = pokemones[i].photo;
-    type = pokemones[i].type;
-
-    console.log(id + name + photo + type);
-
-    //constructor de div photo
-    contentPhoto = "<div class='photo'>" + "<img src='img/photos/" + photo + ".jpg'>" + "</div>";
-
-    //constructor de div info
-    infoName = "<h2>" + name + "</h2>";
-    infoId = "<span>" + id + "</span>";
-    infoType = "<img src='img/types/" + type + ".png'>";
-    auxDiv = "<div class='d-flex justify-content-between'>" + infoId + infoType + "</div>";
-    contentInfo = "<div class='info'>" + infoName + auxDiv + "</div>";
-
-    //constructor de div pokemon
-    content = content + "<div class='pokemon'>" + contentPhoto + contentInfo + "</div>";
+  
+  for(var i = 0; i < pokemones.length; i++){
+    content += "<div class='pokemonItem'>";
+    content += "<img id='pok' src= 'img/photos/" + pokemones[i].photo + "'>";
+    content += "<h2>" + pokemones[i].name + "</h2>";
+    content += "<h1>" + pokemones[i].id + "</h1>";
+    content += "<img class= 'rounded float-right 'id='tipos'src= 'img/types/" + pokemones[i].type + "'>";
+    content += "</div>"
+  }
+  document.getElementById("result").innerHTML = content;
   }
 
-  document.getElementById('container').innerHTML = content;
-   console.log(content);
 
+function mostrarpoke(quien){
+  var result = "";
+
+  if(quien==null){
+    for(var i=0; i<pokemones.length; i++){
+      result += pokemones[i].name;
+      
+      // result += "<h1>" + pokemones[i].id + "</h1>";
+      console.log(result)
+    }
+    document.getElementById("result").innerHTML = result;
+  } else {
+    for(var i=0; i<pokemones.length; i++){
+      if(pokemones[i].name.toLowerCase().search(quien) >= 0){
+        result += pokemones[i].name;  
+      }
+    }
+    document.getElementById("result").innerHTML = result;
+  }
 }
+
+
+ function busca(pokemones){
+   var quien = document.getElementById("quien").value;
+
+   mostrarpoke();
+ }
+
+
+ 

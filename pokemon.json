@@ -2,55 +2,55 @@ pokemones = [
   {
     "id":"001",
     "name":"Charmander",
-    "photo":"01",
-    "type":"fire"
+    "photo":"01.jpg",
+    "type":"fire.png"
   },
   {
     "id":"002",
     "name":"Kanjaskan",
-    "photo":"02",
-    "type":"fighting"
+    "photo":"02.jpg",
+    "type":"fighting.png"
   },
   {
     "id":"003",
     "name":"Mewtwo",
-    "photo":"03",
-    "type":"fairy"
+    "photo":"03.jpg",
+    "type":"fairy.png"
   },
   {
     "id":"004",
     "name":"Blastoise",
-    "photo":"04",
-    "type":"water"
+    "photo":"04.jpg",
+    "type":"water.png"
   },
   {
     "id":"005",
     "name":"Bulbasaur",
-    "photo":"05",
-    "type":"grass"
+    "photo":"05.jpg",
+    "type":"grass.png"
   },
   {
     "id":"006",
     "name":"Magikarp",
-    "photo":"06",
-    "type":"water"
+    "photo":"06.jpg",
+    "type":"water.png"
   },
   {
     "id":"007",
     "name":"Pikachu",
-    "photo":"07",
-    "type":"electric"
+    "photo":"07.jpg",
+    "type":"electric.png"
   },
   {
     "id":"008",
     "name":"Gengar",
-    "photo":"08",
-    "type":"ghost"
+    "photo":"08.jpg",
+    "type":"ghost.png"
   },
   {
     "id":"009",
     "name":"Vamoacalmarno",
-    "photo":"09",
-    "type":"water"
+    "photo":"09.jpg",
+    "type":"water.png"
   }
 ];

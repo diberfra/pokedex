@@ -1,0 +1,54 @@
+.pokemonItem{
+    width: 250px;
+    height: 420px;
+    margin: 10px 10px;
+    background-color: white;
+    box-shadow: 4px 4px 5px grey;
+}
+body{
+    background-color: gainsboro;
+}
+
+h2{
+    color: gray;
+}
+
+h1{
+    display: inline;
+    color: blue;
+}
+
+#tipos {
+    
+    text-align: right;
+
+
+}
+
+#pok {
+width: 100%;
+margin-bottom: 15px;
+margin-top: 10px;
+
+}
+
+.navbar{
+    background-color:red;
+    
+}
+
+.navbar img{
+    width: 13%;
+}
+
+.container{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.btn{
+    border: 1px solid #f6b93b;
+    color: navy;
+    background-color:#f6b93b;
+}
+
