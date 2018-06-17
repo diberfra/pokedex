@@ -1,16 +1,21 @@
 .pokemonItem{
     width: 250px;
-    height: 420px;
+    height: 380px;
     margin: 10px 10px;
     background-color: white;
     box-shadow: 4px 4px 5px grey;
 }
+.pokemonItem:hover{
+    transform: scale(1.04);
+}
+
 body{
     background-color: gainsboro;
 }
 
 h2{
     color: gray;
+    text-align: center;
 }
 
 h1{
@@ -22,6 +27,7 @@ h1{
     
     text-align: right;
 }
+
 
 #pok {
 width: 90%;
